@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: #e7e7e7;
+  font-size: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 50%;
+  background-color: white;
+}
+
+@media (max-width: 1120px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+hr {
+  background-color: lightgray;
+  border: 1px lightgray solid;
+  width: 100%;
+}
+
+.row-header {
+  display: flex;
+  align-items: center;
+}
+
+.row-header p {
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.row button {
+  background-color: transparent;
+  border: none;
+  font-size: larger;
+}
+
+.row-input input {
+  font-family: inherit;
+  font-size: 1.4rem;
+  background-color: inherit;
+  outline: none;
+  width: 90%;
+}
+
+.row-input button {
+  cursor: pointer;
+}
+
+.task-container {
+  padding-top: 20px;
+  box-shadow: 5px 10px 20px 0 lightgrey;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.check {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.move-btn {
+  cursor: move;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+.task-description {
+  border: none;
+  border-width: 0;
+  outline: none;
+  margin: 10px;
+  background-color: inherit;
+  width: 90%;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: #f1efef;
+}
+
+.row-task.over {
+  border: 3px solid blue;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: lightgrey;
+}
+
+.clear-completed {
+  text-align: center;
+  color: darkgray;
+  padding: 20px;
+  font-size: 2rem;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.drag-start {
+  opacity: 0.4;
+}
+
+.selected-row {
+  background-color: lightgoldenrodyellow;
+}
+
+.clear-completed:hover {
+  text-decoration: underline;
+  color: black;
+}
